@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>Module six. Lesson eleven. Element &#60;form&#62;</header>
+    <main>
+      <!-- HERO -->
+      <section>
+        <h1>Module six. Lesson eleven. Element &#60;form&#62;</h1>
+        <h2>Element &#60;label&#62;</h2>
+      </section>
+      <section>
+        <h2>Element &#60;label&#62;</h2>
+        <!-- Exemple 2 section -->
+        <section>
+          <h3>Exemple 2</h3>
+          <p>
+            Елемент &#60;label&#62; пов'язує опис (мітку) з інтерактивним
+            елементом форми. Текст мітки пов'язаний з елементом не тільки
+            візуально, але й логічно. Наприклад, скрінрідер оголосить текст
+            мітки, коли користувач поставить фокус на пов'язаний елемент. По
+            кліку на мітці, пов'язаний елемент автоматично отримає ефект
+            фокуса./p>
+          </p>
+          <p>
+            Якщо елемент форми, наприклад поле введення, вкладається в
+            &#60;label&#62;, зв'язок створюється браузером автоматично. Клік на
+            текст «Email» або «Password» поставить фокус у відповідне поле
+            введення.
+          </p>
+          <!-- Exemple 2.1 -->
+          <form>
+            <label>
+              Email
+              <input type="email" name="email" />
+            </label>
+
+            <label>
+              Password
+              <input type="password" name="password" />
+            </label>
+
+            <button type="submit">Submit</button>
+          </form>
+          <p>
+            Якщо елемент форми не вкладений в &#60;label&#62;, необхідно явно
+            зв'язати їх за допомогою атрибута id елемента, що зв'язується, і
+            атрибута for мітки.
+          </p>
+          <!-- Exemple 2.2 -->
+          <form>
+            <label for="user_email">Email</label>
+            <input type="email" name="email" id="user_email" />
+
+            <label for="user_password">Password</label>
+            <input type="password" name="password" id="user_password" />
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+        <!-- Element <input> -->
+        <section></section>
+        <!-- Lesson -->
+        <section>
+          <div class="modal-background">
+            <div class="">
+              <form action="#" name="form-buy" class="modal-form">
+                <label for="">
+                  <span>Name</span>
+                  <input
+                    type="text"
+                    class="modal-input"
+                    name="user_name"
+                    placeholder="Enter Name"
+                  />
+                </label>
+                <label for="">
+                  <span>Phone</span>
+                  <input
+                    type="tel"
+                    class="modal-input"
+                    name="user_tel"
+                    placeholder="Enter Phone"
+                  />
+                </label>
+                <label for="">
+                  <span>Email</span>
+                  <input
+                    type="email"
+                    class="modal-input"
+                    name="user_mail"
+                    placeholder="Enter Email"
+                  />
+                </label>
+                <button type="submit"></button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

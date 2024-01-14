@@ -1,0 +1,39 @@
+/* FORM */
+.form {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  width: 1600px;
+  height: 1000px;
+
+  outline: 2px solid red;
+}
+
+.my-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 440px;
+  height: 340px;
+  padding: 30px;
+
+  background-color: #e7ec46;
+  border-radius: 8px;
+}
+
+.user-name,
+.user-tel,
+.user-email,
+.password {
+  width: 440px;
+  height: 35px;
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 4px;
+}
+
+.button {
+  margin-top: 20px;
+}
